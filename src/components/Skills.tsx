@@ -11,7 +11,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-[#C2F8CB] rounded-xl">
+    <section id="skills" className="bg-[#C2F8CB] lg:rounded-2xl">
       <h2>My Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         {skills.map((skill) => (

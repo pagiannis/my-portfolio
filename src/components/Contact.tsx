@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#C2F8CB] rounded-2xl">
+    <section id="contact" className="bg-[#C2F8CB] lg:rounded-2xl">
       <h2>Get In Touch</h2>
       <div className="max-w-2xl mx-auto">
         <form

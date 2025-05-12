@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 export default function Portfolio() {
   return (
-    <div className="font-sans text-gray-900">
+    <div className="font-sans text-gray-900 bg-[#F5FEF7]">
       <Header />
       <main>
         <Hero />

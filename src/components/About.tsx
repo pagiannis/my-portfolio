@@ -13,8 +13,8 @@ export default function About() {
           </p>
           <p className="text-lg mb-4">
             Currently, I'm working on a project called "fizzy-jeli" which is a
-            simulation of a real-world e-shop. It is a full-stack e-commerce
-            application built with React, TypeScript, and Node.js.
+            simulation of a real-world e-shop. It is a full-stack application
+            built with React, TypeScript, and Node.js.
           </p>
           <p className="text-lg">
             When I'm not coding, you can find me outside exploring nature,

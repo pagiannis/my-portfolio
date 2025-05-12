@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm ">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mp-auto lg:px-36 px-4 sm:px-6 lg:px-8 bg-[#F5FEF7]">
         <div className="flex justify-between items-center h-16">
           <a href="#" className="text-xl font-bold text-purple-color">
             Giannis Papadopoulos

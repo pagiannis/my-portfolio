@@ -6,7 +6,7 @@ export default function About() {
         <div>
           <p className="text-lg mb-4">
             Hello! I'm a junior full stack web dev passionate about creating
-            modern/creative websites. I have expirience with React.js, Node.js,
+            modern/creative websites. I have experience with React.js, Node.js,
             Express.js, Git and i know the basics of realtional (SQL) and non
             relational (MongoDB) databases. Also I'm always eager to learn new
             technologies and frameworks. Additionaly I know how to use Postman.

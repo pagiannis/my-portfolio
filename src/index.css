@@ -22,3 +22,19 @@ h2 {
 .btn-primary {
   @apply bg-blue-600 text-white hover:bg-blue-700;
 }
+
+.bg-purple-color {
+  @apply bg-[#8367C7];
+}
+
+.bg-purple-color:hover{
+  @apply bg-[#5603AD];
+}
+
+.text-purple-color {
+  @apply text-[#8367C7];
+}
+
+.text-purple-color:hover{
+  @apply text-[#5603AD];
+}

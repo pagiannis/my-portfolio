@@ -20,7 +20,7 @@ export default function Projects() {
         "A very simple one page frontned project thats shows my work.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Frontend"],
       demoUrl: "#",
-      codeUrl: "#",
+      codeUrl: "https://github.com/pagiannis/my-portfolio",
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ export default function Projects() {
             key={project.id}
             className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <div className="h-48 bg-blue-100 flex items-center justify-center">
+            <div className="h-48 bg-green-100 flex items-center justify-center">
               {project.imageUrl ? (
                 <img
                   src={project.imageUrl}
@@ -51,7 +51,7 @@ export default function Projects() {
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <span className="text-blue-500 text-lg">Project Preview</span>
+                <span className="text-green-500 text-lg">Project Preview</span>
               )}
             </div>
             <div className="p-6">
@@ -71,7 +71,7 @@ export default function Projects() {
                 {project.demoUrl && (
                   <a
                     href={project.demoUrl}
-                    className="btn text-white bg-purple-600 hover:bg-purple-700 text-sm"
+                    className="btn text-white bg-purple-color text-sm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -11,11 +11,11 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-[#B3E9C7] rounded-xl">
+    <section id="skills" className="bg-[#C2F8CB] rounded-xl">
       <h2>My Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         {skills.map((skill) => (
-          <div key={skill.name} className="bg-white p-6 rounded-lg shadow-sm">
+          <div key={skill.name} className="bg-white p-6 rounded-2xl shadow-sm">
             <div className="flex justify-between mb-2">
               <h3 className="font-medium">{skill.name}</h3>
               <span className="text-gray-500">{skill.level}%</span>

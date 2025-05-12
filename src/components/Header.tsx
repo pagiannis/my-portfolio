@@ -11,10 +11,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-white shadow-sm ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="text-xl font-bold text-purple-600">
+          <a href="#" className="text-xl font-bold text-purple-color">
             Giannis Papadopoulos
           </a>
 
@@ -24,7 +24,7 @@ export default function Header() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-gray-700 hover:text-purple-600 transition-colors"
+                className="text-gray-700 hover:text-purple-400 transition-colors"
               >
                 {item.name}
               </a>

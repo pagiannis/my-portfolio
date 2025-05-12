@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#C2F8CB] rounded-xl">
-      <h2 className="text-gray-700">Get In Touch</h2>
+    <section id="contact" className="bg-[#C2F8CB] rounded-2xl">
+      <h2>Get In Touch</h2>
       <div className="max-w-2xl mx-auto">
         <form
           className="space-y-6"
@@ -10,10 +10,7 @@ export default function Contact() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label
-                htmlFor="name"
-                className="block mb-2 text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="name" className="block mb-2 text-sm font-medium">
                 Name
               </label>
               <input
@@ -27,7 +24,7 @@ export default function Contact() {
             <div>
               <label
                 htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-700"
+                className="block mb-2 text-sm font-medium "
               >
                 Email
               </label>
@@ -43,7 +40,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-gray-700"
+              className="block mb-2 text-sm font-medium "
             >
               Subject
             </label>
@@ -58,7 +55,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-700"
+              className="block mb-2 text-sm font-medium "
             >
               Message
             </label>
@@ -72,7 +69,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="btn bg-purple-600 hover:bg-purple-700 cursor-pointer text-white w-full md:w-auto"
+            className="btn bg-purple-color cursor-pointer text-white w-full md:w-auto"
           >
             Send Message
           </button>
@@ -84,7 +81,7 @@ export default function Contact() {
           <div className="flex justify-center gap-6">
             <a
               href="https://www.linkedin.com/in/ιωάννης-παπαδόπουλος-212591256/"
-              className="text-purple-600 hover:text-purple-700"
+              className="text-purple-color "
             >
               <span className="sr-only">LinkedIn</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -93,7 +90,7 @@ export default function Contact() {
             </a>
             <a
               href="https://github.com/pagiannis"
-              className="text-purple-600 hover:text-purple-800"
+              className="text-purple-color "
             >
               <span className="sr-only">GitHub</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

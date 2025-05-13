@@ -1,9 +1,34 @@
+import { type FieldValues, useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const contactSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  email: z.string().email("Invalid email address"),
+  subject: z.string().min(1, "Subject is required"),
+  message: z.string().min(1, "Message is required"),
+});
+
+type ContactForm = z.infer<typeof contactSchema>;
+
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactForm>({
+    resolver: zodResolver(contactSchema),
+  });
+  const onSubmit = (data: FieldValues) => {
+    console.log(data);
+  };
+
   return (
     <section id="contact" className="bg-[#C2F8CB] lg:rounded-2xl">
       <h2>Get In Touch</h2>
       <div className="max-w-2xl mx-auto">
         <form
+          onSubmit={handleSubmit(onSubmit)}
           className="space-y-6"
           action="https://formspree.io/f/xnndgplo"
           method="POST"
@@ -15,11 +40,16 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                {...register("name")}
                 id="name"
                 name="name"
-                required
                 className="w-full px-4 py-2 border border-[#8367C7] rounded-md focus:ring-blue-500 focus:border-blue-500"
               />
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.name.message}
+                </p>
+              )}
             </div>
             <div>
               <label
@@ -30,11 +60,16 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                {...register("email")}
                 id="email"
                 name="email"
-                required
                 className="w-full px-4 py-2 border border-[#8367C7] rounded-md focus:ring-blue-500 focus:border-blue-500"
               />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
           </div>
           <div>
@@ -46,11 +81,16 @@ export default function Contact() {
             </label>
             <input
               type="text"
+              {...register("subject")}
               id="subject"
               name="subject"
-              required
               className="w-full px-4 py-2 border border-[#8367C7] rounded-md focus:ring-blue-500 focus:border-blue-500"
             />
+            {errors.subject && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.subject.message}
+              </p>
+            )}
           </div>
           <div>
             <label
@@ -61,11 +101,16 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              {...register("message")}
               name="message"
               rows={4}
-              required
               className="w-full px-4 py-2 border border-[#8367C7] rounded-md focus:ring-blue-500 focus:border-blue-500"
             ></textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.message.message}
+              </p>
+            )}
           </div>
           <button
             type="submit"

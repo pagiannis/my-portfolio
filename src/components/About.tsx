@@ -24,7 +24,6 @@ export default function About() {
         </div>
         <div className="flex justify-center">
           <div className="w-64 h-64 rounded-full bg-blue-100 overflow-hidden border-4 border-[#8367C7]">
-            {/* Placeholder for your image */}
             <div className="w-full h-full bg-purple-700 flex items-center justify-center text-4xl text-white">
               <img src="/profile.png" alt="Profile Pic"></img>
             </div>

@@ -7,9 +7,9 @@ export default function Projects() {
       imageUrl: "/fizzy-jeli-screenshot.png",
       title: "Fizzy Jeli",
       description:
-        "A full-featured online store with user functionality and cart processing.",
+        "A full-stack e-shop with user functionality. (In progress).",
       technologies: ["React", "Exrpess", "Tailwind", "MongoDB", "Full-Stack"],
-      demoUrl: "#",
+      demoUrl: "",
       codeUrl: "https://github.com/pagiannis/fizzy-jeli",
     },
     {
@@ -19,7 +19,7 @@ export default function Projects() {
       description:
         "A very simple one page frontned project thats shows my work.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Frontend"],
-      demoUrl: "#",
+      demoUrl: "",
       codeUrl: "https://github.com/pagiannis/my-portfolio",
     },
     {
